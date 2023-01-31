@@ -22,12 +22,11 @@ export default function Weather() {
         <input type="submit" value="search" id="search-button" />
       </form>
       <div class="city-day-time">
-        <h1></h1>
+        <h1>City</h1>
         <p>Last updated:<span class="date-time"></span></p>
         <p class="temperature-and-units">
           <span class="temp"></span
-          ><a href="#" id="fahrenheit-link" class="units">°F |</a
-          ><a href="#" id="celsius-link" class="units-link">°C</a>
+          ><a href="#" id="fahrenheit-link" class="units">°F |</a><a href="#" id="celsius-link" class="units-link">°C</a>
         </p>
         <p class="current-weather"></p>
       </div>
@@ -50,10 +49,10 @@ export default function Weather() {
       <a
         href="https://github.com/lissiemarie/SheCodes-github-lesson"
         target="_blank"
-        >open-sourced on GitHub</a
+         rel="noreferrer">open-sourced on GitHub</a
       >
       and
-      <a href="https://app.netlify.com/" target="_blank">hosted on Netlify</a>
+      <a href="https://app.netlify.com/" target="_blank" rel="noreferrer">hosted on Netlify</a>
     </p>
     <script type="text/javascript" src="src/index.js"></script>
   </body>)
