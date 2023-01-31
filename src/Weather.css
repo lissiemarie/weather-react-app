@@ -92,8 +92,7 @@ a {
     font-size: 20px;
 }
 
-.current-emoji {
-    height: 125px;
+.loader {
     margin: 0 auto;
 }
 

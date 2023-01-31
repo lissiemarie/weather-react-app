@@ -140,6 +140,7 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemp);
   ariaLabel="dna-loading"
   wrapperStyle={{}}
   wrapperClass="dna-wrapper"
+  class="loader"
 />
         <p class="wind"></p>
       </div>
