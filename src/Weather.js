@@ -26,7 +26,7 @@ export default function Weather() {
         <p>Last updated:<span class="date-time"></span></p>
         <p class="temperature-and-units">
           <span class="temp"></span
-          ><a href="#" id="fahrenheit-link" class="units">°F |</a><a href="#" id="celsius-link" class="units-link">°C</a>
+          ><button href="#" id="fahrenheit-link" class="units">°F</button><button href="#" id="celsius-link" class="units-link">°C</button>
         </p>
         <p class="current-weather"></p>
       </div>
