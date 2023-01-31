@@ -9,7 +9,7 @@ export default function Weather() {
     }
 
     let apiKey = "40dfbc5bab159e395434bbfed3c3f9ef";
-    let city = "Dallas";
+    let city = "Denver";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
     axios.get(apiUrl).then(handleResponse);
