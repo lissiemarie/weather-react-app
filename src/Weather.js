@@ -13,7 +13,8 @@ export default function Weather() {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
     axios.get(apiUrl).then(handleResponse);
-    return (<TailSpin
+    return (
+    <TailSpin
     height = "80"
     width = "80"
     radius = "1"
