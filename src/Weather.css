@@ -1,6 +1,6 @@
 body {
     background: #77628c;
-    color: #3b0944;
+    
     font-family: 'Inter Tight', sans-serif;
     display: flex;
     flex-direction: column;
@@ -61,6 +61,7 @@ a {
     width: 100%;
     margin: 100px auto;
     background: #eeeeee;
+    color: #3b0944;
     padding: 20px;
     border-radius: 25px;
     box-shadow: 25px 17px 37px #142d4c;
