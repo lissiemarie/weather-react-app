@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { Dna } from 'react-loader-spinner'
 
+import "./Weather.css"
 
 export default function Weather() {
 
@@ -23,15 +24,16 @@ export default function Weather() {
       </form>
       <div class="city-day-time">
         <h1>City</h1>
-        <p>Last updated:<span class="date-time"></span></p>
+        <p>Last updated:<span class="date-time">Wednesday 07:00</span></p>
         <p class="temperature-and-units">
-          <span class="temp"></span
+          <span class="temp">75</span
           ><button href="#" id="fahrenheit-link" class="units">°F</button><button href="#" id="celsius-link" class="units-link">°C</button>
         </p>
-        <p class="current-weather"></p>
+        <p class="current-weather">Cloudy</p>
       </div>
       <div class="weather">
-        <p class="humidity"></p>
+        <p class="humidity">Humidity: 7%</p>
+        <span class="current-emoji">
         <Dna
           visible={true}
           height="80"
@@ -40,20 +42,20 @@ export default function Weather() {
           wrapperStyle={{}}
           wrapperClass="dna-wrapper"
         />
-        <p class="wind"></p>
+        </span>
+        <p class="wind">Wind: 5mph</p>
       </div>
-      <div class="five-day" id="forecast"></div>
+      {/* <div class="five-day" id="forecast"></div> */}
     </div>
     <p class="footer">
-      Coded by Elyssa Creed and is
+      Coded by Elyssa Creed and is 
       <a
         href="https://github.com/lissiemarie/SheCodes-github-lesson"
         target="_blank"
-         rel="noreferrer">open-sourced on GitHub</a
+         rel="noreferrer"> open-sourced on GitHub </a
       >
-      and
-      <a href="https://app.netlify.com/" target="_blank" rel="noreferrer">hosted on Netlify</a>
+      and 
+       <a href="https://app.netlify.com/" target="_blank" rel="noreferrer"> hosted on Netlify</a>
     </p>
-    <script type="text/javascript" src="src/index.js"></script>
   </body>)
 };
