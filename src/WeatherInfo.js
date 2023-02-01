@@ -1,5 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
+
 
 
 export default function WeatherInfo(props) {
@@ -23,7 +25,7 @@ export default function WeatherInfo(props) {
                 <div class="weather">
                     <p class="humidity">Humidity: {props.data.humidity}%</p>
                     <span class="current-emoji">
-                    <img src={props.data.iconUrl} alt={props.data.description} />
+                    <WeatherIcon code={props.data.icon} />
                     </span>
                     <p class="wind">Wind: {props.data.wind}mph</p>
                 </div>
