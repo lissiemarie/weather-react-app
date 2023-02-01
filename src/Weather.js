@@ -13,7 +13,7 @@ export default function Weather() {
         wind: Math.round(response.data.wind.speed),
         humidity: response.data.main.humidity,
         city: response.data.name,
-        description: response.data.weather[0].description.toUpperCase(),
+        description: response.data.weather[0].description,
         feels: Math.round(response.data.main.feels_like),
         high: Math.round(response.data.main.temp_max),
         low: Math.round(response.data.main.temp_min),
