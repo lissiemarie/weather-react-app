@@ -21,6 +21,7 @@ export default function WeatherInfo(props) {
                     </span>
                     <p class="wind">Wind: {props.data.wind}mph</p>
                 </div>
+                <hr />
                 <div class="forecast"></div>
         </div>
     );

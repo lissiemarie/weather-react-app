@@ -209,3 +209,10 @@ img {
         grid-template-rows: 1fr 1fr;
     }
 }
+
+@media (max-width: 375px) {
+    .main {
+        width: 70%;
+        margin: 10px auto;
+    }
+}
