@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 
 
@@ -10,9 +11,7 @@ export default function WeatherInfo(props) {
                 <div class="city-day-time">
                     <h1>{props.data.city}</h1>
                     <p class="date-time">Last updated: <FormattedDate date={props.data.date}/></p>
-                    <p class="temperature-and-units">
-                    <span class="temp">{props.data.temperature}</span><button href="#" id="fahrenheit-link" class="units">°F</button><button href="#" id="celsius-link" class="units-link">°C</button>
-                    </p>
+                    <WeatherTemperature fahrenheit={props.data.temperature}/>
                     <div class="high-low">
                         <p>High: <strong>{props.data.high}°F</strong></p>
                         <p>Low: <strong>{props.data.low}°F</strong></p>
