@@ -11,15 +11,8 @@ export default function WeatherInfo(props) {
                 <div class="city-day-time">
                     <h1>{props.data.city}</h1>
                     <p class="date-time">Last updated: <FormattedDate date={props.data.date}/></p>
-                    <WeatherTemperature fahrenheit={props.data.temperature}/>
-                    <div class="high-low">
-                        <p>High: <strong>{props.data.high}°F</strong></p>
-                        <p>Low: <strong>{props.data.low}°F</strong></p>
-                    </div>
+                    <WeatherTemperature fahrenheit={props.data.temperature} high={props.data.high} low={props.data.low} feels={props.data.feels}/>
                     <p class="current-weather">{props.data.description}</p>
-                </div>
-                <div class="feels-like">
-                    <p>Feels like: {props.data.feels}°F</p>
                 </div>
                 <div class="weather">
                     <p class="humidity">Humidity: {props.data.humidity}%</p>

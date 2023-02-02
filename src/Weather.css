@@ -1,12 +1,14 @@
 body {
-    background: #77628c;
-    
+    background: #71a0a5;
     font-family: 'Inter Tight', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
+
+
 
 h1 {
     font-size: 35px;
@@ -39,7 +41,7 @@ a {
     top: -30px;
     position: relative;
     border: none;
-    transition: all 400ms ease-in-out;
+    
     text-decoration: underline;
 }
 
@@ -113,6 +115,11 @@ a {
 
 .feels-like {
     font-size: 17px;
+    margin: 0 auto;
+}
+
+.feels-like p {
+    text-align: center;
 }
 
 .weather {
@@ -189,8 +196,9 @@ img {
         font-size: 40px;
     }
 
-    .units,
-    .units-link {
+    .unit,
+    .unit-link,
+    .inactive-unit {
         font-size: 15px;
         top: -20px;
         position: relative;
