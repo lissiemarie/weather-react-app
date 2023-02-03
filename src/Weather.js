@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Dna } from 'react-loader-spinner'
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 import "./Weather.css"
 
@@ -51,6 +52,7 @@ export default function Weather(props) {
             <input type="submit" value="search" id="search-button" />
           </form>
           <WeatherInfo data={weatherData}/>
+          <WeatherForecast />
         </div>
       );
     } else {

@@ -65,7 +65,7 @@ a {
 }
 
 .main {
-    height: 600px;
+    height: auto;
     width: 100%;
     margin: 100px auto;
     background: #eeeeee;
@@ -136,12 +136,18 @@ img {
 
 #forecast {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: 20px;
-    background-color: #71a0a5;
+    background-color: #77628c20;
     border-radius: 15px;
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.forecast-day {
+    margin: 15px auto;
+    font-size: 17px;
 }
 
 .forecast-temp-max,
@@ -166,13 +172,13 @@ img {
 @media (max-width: 1482px) {
     .main {
         width: 80%;
-        height: 800px;
+        height: auto;
         margin: 0 auto;
     }
 
     #forecast {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 
     .footer {
@@ -185,7 +191,7 @@ img {
     .main {
         width: 85%;
         margin: 0 auto;
-        height: 750px;
+        height: auto;
     }
 
     .temperature-and-units {
@@ -205,8 +211,8 @@ img {
     }
 
     #forecast {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 }
 
@@ -214,5 +220,6 @@ img {
     .main {
         width: 70%;
         margin: 10px auto;
+        height: auto;
     }
 }

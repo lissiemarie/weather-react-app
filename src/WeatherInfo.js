@@ -17,7 +17,7 @@ export default function WeatherInfo(props) {
                 <div class="weather">
                     <p class="humidity">Humidity: {props.data.humidity}%</p>
                     <span class="current-emoji">
-                    <WeatherIcon code={props.data.icon} />
+                    <WeatherIcon code={props.data.icon} size={70}/>
                     </span>
                     <p class="wind">Wind: {props.data.wind}mph</p>
                 </div>
