@@ -194,14 +194,14 @@ img {
         }
 
     .main {
-        width: 80%;
+        width: 100%;
         height: auto;
-        margin: 0 auto;
+        margin: 10px auto;
     }
 
     #forecast {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .footer {
@@ -210,42 +210,16 @@ img {
     }
 }
 
-@media (max-width: 615px) {
-    
-
-    .main {
-        width: 85%;
-        margin: 0 auto;
-        height: auto;
-    }
-
-    .temperature-and-units {
-        margin-top: 20%;
-    }
-
-    .temp {
-        font-size: 40px;
-    }
-
-    .unit,
-    .unit-link,
-    .inactive-unit {
-        font-size: 15px;
-        top: -20px;
-        position: relative;
-    }
-
-    #forecast {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-}
-
-@media (max-width: 375px) {
+@media (max-width: 600px) {
    
     .main {
         width: 70%;
         margin: 10px auto;
         height: auto;
     }
+
+        #forecast {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
 }
