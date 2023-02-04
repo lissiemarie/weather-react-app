@@ -4,7 +4,7 @@
 
 
 .App-header {
-    background: #71a0a5;
+    background: transparent;
     min-height: 100vh;
     display: flex;
     flex-direction: column;

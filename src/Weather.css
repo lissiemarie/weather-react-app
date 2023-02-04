@@ -1,5 +1,9 @@
 body {
     background: #71a0a5;
+    background-image: url("./walking-outside.svg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 600px;
     font-family: 'Inter Tight', sans-serif;
     display: flex;
     flex-direction: column;
@@ -87,7 +91,7 @@ a {
     font-size: 15px;
     border-radius: 15px;
     border-color: #77628c;
-    background-color: #acc6aa;
+    background-color: #71a0a550;
     font-family: 'Inter Tight', sans-serif;
 }
 
@@ -97,10 +101,16 @@ a {
     font-size: 15px;
     border-radius: 15px;
     border: none;
-    box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 5px 5px #142d4c;
     background-color: #77628c;
     color: #edf7fa;
     font-family: 'Azeret Mono', monospace;
+    transition: 400ms all ease-in-out;
+}
+
+#search-button:hover {
+    background-color:#77628c80;
+    transition: 400ms all ease-in-out;
 }
 
 #search-button:active {
@@ -142,12 +152,26 @@ img {
     border-radius: 15px;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 .forecast-day {
     margin: 15px auto;
     font-size: 17px;
+}
+
+.forecast-day-blocks {
+    background-color: #77628c30;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 10px 5px 5px #142d4c;
+    transition: 400ms all ease-in-out;
+}
+
+.forecast-day-blocks:hover {
+    background-color: #77628c10;
+    transition: 400ms all ease-in-out;
 }
 
 .forecast-temp-max,
@@ -163,13 +187,12 @@ img {
     opacity: 0.5;
 }
 
-.footer {
-    text-align: center;
-    margin: -80px -40px 0 auto;
-    font-size: 15px;
-}
-
 @media (max-width: 1482px) {
+    body {
+            background-image: url("./endless-constellation\ \(1\).svg");
+            background-repeat: repeat;
+        }
+
     .main {
         width: 80%;
         height: auto;
@@ -188,6 +211,8 @@ img {
 }
 
 @media (max-width: 615px) {
+    
+
     .main {
         width: 85%;
         margin: 0 auto;
@@ -217,6 +242,7 @@ img {
 }
 
 @media (max-width: 375px) {
+   
     .main {
         width: 70%;
         margin: 10px auto;
