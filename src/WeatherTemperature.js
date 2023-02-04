@@ -28,8 +28,6 @@ export default function WeatherTemperature(props) {
     );
     } else {
         let celsius = Math.round((props.fahrenheit - 32) * 5/9);
-        let highC = Math.round((props.high - 32) * 5/9);
-        let lowC = Math.round((props.low - 32) * 5/9);
         let feelsC = Math.round((props.feels - 32) * 5/9);
         return (
         <div className='WeatherTemperature'>
