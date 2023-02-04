@@ -12,6 +12,7 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState(null);
     function handleResponse(response) {
       setWeatherData({
+        coordinates: response.data.coord,
         temperature: Math.round(response.data.main.temp),
         wind: Math.round(response.data.wind.speed),
         humidity: response.data.main.humidity,
@@ -28,7 +29,7 @@ export default function Weather(props) {
     }
 
     function search() {
-      const apiKey = "40dfbc5bab159e395434bbfed3c3f9ef";
+      const apiKey = "f3009e4852fa0a079dab291dabf020c4";
       let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     
       axios.get(apiUrl).then(handleResponse);
@@ -52,7 +53,7 @@ export default function Weather(props) {
             <input type="submit" value="search" id="search-button" />
           </form>
           <WeatherInfo data={weatherData}/>
-          <WeatherForecast />
+          <WeatherForecast coordinates={weatherData.coordinates}/>
         </div>
       );
     } else {
